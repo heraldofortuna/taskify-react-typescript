@@ -1,6 +1,12 @@
-.todos {
+.todolist {
   display: flex;
   justify-content: space-evenly;
   width: 90%;
   flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .todolist {
+    width: 95%;
+  }
 }
