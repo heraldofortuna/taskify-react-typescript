@@ -16,11 +16,14 @@ const App: React.FC = () => {
       setTodo("");
     }
   };
-  console.log(todos);
+
   return (
     <div className="App">
       <span className="heading">Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      {todos.map((item) => (
+        <li key={item.id}>{item.todo}</li>
+      ))}
     </div>
   );
 };
