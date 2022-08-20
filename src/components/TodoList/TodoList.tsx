@@ -28,6 +28,8 @@ const TodoList: React.FC<Props> = ({
             todo={todo}
             todos={todos}
             setTodos={setTodos}
+            completedTodos={completedTodos}
+            setCompletedTodos={setCompletedTodos}
           />
         ))}
       </div>
@@ -39,6 +41,8 @@ const TodoList: React.FC<Props> = ({
             todo={todo}
             todos={todos}
             setTodos={setTodos}
+            completedTodos={completedTodos}
+            setCompletedTodos={setCompletedTodos}
           />
         ))}
       </div>

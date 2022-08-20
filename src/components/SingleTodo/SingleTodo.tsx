@@ -10,9 +10,17 @@ type Props = {
   todo: Todo;
   todos: Todo[];
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+  completedTodos: Todo[];
+  setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 };
 
-const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
+const SingleTodo: React.FC<Props> = ({
+  todo,
+  todos,
+  setTodos,
+  completedTodos,
+  setCompletedTodos,
+}) => {
   const [edit, setEdit] = useState<boolean>(false);
   const [editTodo, setEditTodo] = useState<string>(todo.todo);
 
@@ -63,7 +71,6 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
         <span
           className="singletodo__icon"
           onClick={() => {
-            console.log("Edit!", edit, todo);
             if (!edit && !todo.isDone) {
               setEdit(!edit);
             }
