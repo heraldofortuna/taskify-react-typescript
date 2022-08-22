@@ -1,8 +1,9 @@
 .singletodo {
   display: flex;
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 15px;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px;
   background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
   transition: 0.2s;
 }
@@ -13,26 +14,27 @@
 }
 
 .singletodo__text {
-  flex: 1;
-  padding: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
+  white-space: initial;
+  word-wrap: break-word;
+  padding: 4px;
 }
 
 .singletodo__text:focus {
   outline: none;
 }
 
-.singletodo__icon {
-  margin-left: 10px;
-  font-size: 25px;
-  cursor: pointer;
+.singletodo__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 1200px) {
-  .singletodo {
-    width: 100%;
-  }
+.singletodo__icon {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {

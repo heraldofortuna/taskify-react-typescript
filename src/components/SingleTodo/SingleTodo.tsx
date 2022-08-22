@@ -57,9 +57,9 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
       ) : todo.isDone ? (
         <s className="singletodo__text">{todo.todo}</s>
       ) : (
-        <span className="singletodo__text">{todo.todo}</span>
+        <p className="singletodo__text">{todo.todo}</p>
       )}
-      <div>
+      <div className="singletodo__icons">
         <span
           className="singletodo__icon"
           onClick={() => {
