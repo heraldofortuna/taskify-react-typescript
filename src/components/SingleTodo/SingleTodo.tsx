@@ -1,18 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
-import { MdDone } from "react-icons/md";
-
-import { Todo } from "../../model";
-
+import { MdKeyboardReturn, MdDone } from "react-icons/md";
 import "./SingleTodo.css";
+import { SingleTodoProps } from "../../types/components";
 
-type Props = {
-  todo: Todo;
-  todos: Todo[];
-  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-};
-
-const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
+const SingleTodo: React.FC<SingleTodoProps> = ({ todo, todos, setTodos, isCompleted }) => {
   const [edit, setEdit] = useState<boolean>(false);
   const [editTodo, setEditTodo] = useState<string>(todo.todo);
 
@@ -60,24 +52,30 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
         <p className="singletodo__text">{todo.todo}</p>
       )}
       <div className="singletodo__icons">
-        <span
-          className="singletodo__icon"
-          onClick={() => {
-            if (!edit && !todo.isDone) {
-              setEdit(!edit);
-            }
-          }}
-        >
-          <AiFillEdit />
+        {!isCompleted && (
+          <span
+            className="singletodo__icon"
+            onClick={() => {
+              if (!edit && !todo.isDone) {
+                setEdit(!edit);
+              }
+            }}
+          >
+            <AiFillEdit />
+          </span>
+        )}
+        <span className="singletodo__icon" onClick={() => handleDone(todo.id)}>
+          {isCompleted ? (
+            <MdKeyboardReturn />
+          ) : (
+            <MdDone />
+          )}
         </span>
         <span
           className="singletodo__icon"
           onClick={() => handleDelete(todo.id)}
         >
           <AiFillDelete />
-        </span>
-        <span className="singletodo__icon" onClick={() => handleDone(todo.id)}>
-          <MdDone />
         </span>
       </div>
     </form>

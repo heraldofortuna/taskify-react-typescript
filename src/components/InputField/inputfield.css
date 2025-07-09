@@ -10,12 +10,12 @@
   border-radius: 8px;
   padding: 12px 66px 12px 16px;
   font-size: 16px;
-  border: 1px solid darkgray;
+  border: 2px solid darkgray;
   transition: 0.2s;
 }
 
 .inputfield__box:focus {
-  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px 100vh rgba(0, 0, 0, 0.75);
   outline: none;
 }
 

@@ -1,3 +1,14 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+}
+
 .App {
   min-height: 100vh;
   max-width: 600px;
@@ -8,12 +19,15 @@
   gap: 32px;
   padding: 16px;
   margin: 0 auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .heading {
   color: black;
   text-align: center;
   font-size: 40px;
+  font-weight: 600;
   z-index: 1;
 }
 

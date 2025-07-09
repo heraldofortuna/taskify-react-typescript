@@ -1,47 +1,110 @@
-# Getting Started with Create React App
+# Taskify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Video: https://www.youtube.com/watch?v=FJDVKeh7RJI
+![Project Image](./src/assets/screenshot.png)
 
-## Available Scripts
+> Screenshot - Tasks List
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Description](#description)
+- [How to use?](#how-to-use)
+- [References](#references)
+- [License](#license)
+- [Author](#author)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Web application that allows you to create tasks until they are completed.
 
-### `npm run build`
+### Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML
+- CSS
+- Typescript
+- ReactJS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Go up](#taskify)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## How to use?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+First, after cloning the project locally, install the dependencies to the local in root directory.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```html
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+And run the frontend with:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```html
+$ npm run start
+```
 
-## Learn More
+Finally, navigate to [http://localhost:3000/taskify-react-typescript]http://localhost:3000/taskify-react-typescript in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Go up](#taskify)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## References
+
+ReactJS official documentation:
+
+```html
+https://reactjs.org/docs/getting-started.html
+```
+
+[Go up](#taskify)
+
+---
+
+## Comments
+
+- You can add, edit and remove any active task.
+
+- The application is responsive.
+
+[Go up](#taskify)
+
+---
+
+## License
+
+MIT License
+
+Copyright (c) [2021] [Heraldo Fortuna]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+[Go up](#taskify)
+
+---
+
+## Author
+
+- Twitter - [@heraldofortuna](https://twitter.com/heraldofortuna)
+- GitHub - [heraldofortuna](https://github.com/heraldofortuna)
+- Linkedin - [heraldofortuna](https://www.linkedin.com/in/heraldo-fortuna/)
+
+[Go up](#taskify)

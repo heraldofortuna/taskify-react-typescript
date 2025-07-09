@@ -13,16 +13,21 @@
   gap: 12px;
   padding: 15px;
   border-radius: 8px;
-  background-color: deepskyblue;
+  border: 2px solid deepskyblue;
 }
 
 .todolist--remove {
-  background-color: tomato;
+  border-color: tomato;
 }
 
 .todolist__heading {
+  color: deepskyblue;
   font-weight: 700;
   font-size: 16px;
+}
+
+.todolist--remove .todolist__heading {
+  color: tomato;
 }
 
 @media (max-width: 700px) {

@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-
 import InputField from "./components/InputField/InputField";
-import { Todo } from "./model";
-
-import "./App.css";
 import TodoList from "./components/TodoList/TodoList";
+import { Todo } from "./model";
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
